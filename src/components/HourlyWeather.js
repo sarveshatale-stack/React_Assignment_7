@@ -2,10 +2,8 @@ import React, { useState, useEffect } from "react";
 import HourlyWeatherForecast from "./HourlyWeatherForecast";
 
 function HourlyWeather(props) {
-  //console.dir(props.value)
   const [hourlyWeather, setHourlyWeather] = useState([]);
   useEffect(() => {
-    //console.dir(hourlyWeather);
     if (props.value.hourly.length > 0) {
       setHourlyWeather(props.value.hourly);
     }

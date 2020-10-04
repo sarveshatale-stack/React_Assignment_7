@@ -1,12 +1,9 @@
 import React from "react";
 import axios from "axios";
 
-//const API_KEY = 'API_KEY'
-const API_KEY = "b12f8219ae2e85a290af72189d4e1367";
+const API_KEY = "31c396959795ac490ee1ed8de2fb7d0e";
 class WeatherService {
   GetWeatherReportByLatLong = (latLong, callback) => {
-    // callback(res);
-    // return;
     axios
       .get(
         `https://api.openweathermap.org/data/2.5/onecall?lat=${latLong.lat}&lon=${latLong.long}&appid=${API_KEY}&exclude=minutely&units=metric`

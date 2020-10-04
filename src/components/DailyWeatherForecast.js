@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import WeatherService from "./Service/WeatherService";
 
 function DailyWeatherForecast(props) {
-  //console.dir(props.value);
   const [dailyWeather, setDailyWeather] = useState({
     date: "",
     dayTemp: "",

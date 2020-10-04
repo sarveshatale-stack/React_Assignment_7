@@ -14,7 +14,6 @@ function CurrentWeather(props) {
 
   useEffect(() => {
     if (props.value.daily.length > 0) {
-      //console.dir(props.value)
       let objWeatherService = new WeatherService();
       setCurrent({
         location: props.value.city,
